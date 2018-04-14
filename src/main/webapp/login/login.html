@@ -1,0 +1,19 @@
+<div class="signinbody">
+    <form class="form-signin">
+        <h2 class="form-signin-heading">Please sign in</h2>
+        <label for="inputEmail" class="sr-only">Your login name</label>
+        <input name="name" ng-model="$login.person.name" type="text" id="inputEmail" class="form-control" placeholder="Your login name" required autofocus>
+        <label for="inputPassword" class="sr-only">Password</label>
+        <input type="password" name="password" ng-model="$login.person.password" id="inputPassword" class="form-control" placeholder="Password" required>
+        <div class="alert alert-danger alert-dismissable" ng-if='$login.msg'>
+            <!-- <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button> -->
+            {{$login.msg}}用户名或密码错误。
+        </div>
+        <div>
+            <label>
+                <a ng-click="$login.register();">Register</a>
+            </label>
+        </div>
+        <button class="btn btn-lg btn-primary btn-block" type="submit" ng-click="$login.loginBtn();">Sign in</button>
+    </form>
+</div>

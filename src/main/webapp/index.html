@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+    <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+    <meta content="telephone=no" name="format-detection" />
+    <meta http-equiv="Access-Control-Allow-Origin" content="*" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- 下三行禁止页面缓存 -->
+    <META HTTP-EQUIV="pragma" CONTENT="no-cache">
+    <META HTTP-EQUIV="Cache-Control" CONTENT="no-cache, must-revalidate">
+    <META HTTP-EQUIV="expires" CONTENT="0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>材料管理平台</title>
+    <link type="image/x-icon" rel="shortcut icon" href="http://localhost:8080/mybootstrap/imgs/icons/favicon.ico" />
+    <link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://cdn.bootcss.com/bootstrap/2.3.2/css/bootstrap-responsive.css" rel="stylesheet">
+    <!--自定义CSS-->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/signin.css">
+    <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="http://cdn.static.runoob.com/libs/angular.js/1.4.6/angular.min.js"></script>
+    <script src="https://apps.bdimg.com/libs/angular-route/1.3.13/angular-route.js"></script>
+    <script src="https://cdn.bootcss.com/angular-ui-router/1.0.0-rc.1/angular-ui-router.js"></script>
+    <script src="https://cdn.bootcss.com/angular-ui-router/1.0.0-rc.1/angular-ui-router.min.js"></script>
+</head>
+
+<body ng-app="myApp" class="ng-scope">
+    <div ui-view=""></div>
+</body>
+<!--自定义JS-->
+<script src="./app.js"></script>
+<script src="./login/login.js"></script>
+<script src="./main/main.js"></script>
+<script src="./main/systemSetting/systemSetting.js"></script>
+<script src="./main/userManage/userManage.js"></script>
+<script src="./login/register.js"></script>
+
+</html>

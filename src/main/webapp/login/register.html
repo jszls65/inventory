@@ -1,0 +1,47 @@
+<form class="register-form">
+    <div class="controls controls-row">
+        <label class="span4 text-right" for="ds_host">姓名</label>
+        <div class="span4">
+            <input id="ds_host" class="input-large" type="text" placeholder="请输入真实姓名" />
+        </div>
+    </div>
+    <div class="controls controls-row">
+        <label class="span4 text-right" for="ds_name">用户名</label>
+        <div class="span4">
+            <input id="ds_name" type="text" placeholder="用户名" />
+        </div>
+    </div>
+    <div class="controls controls-row">
+        <label class="span4 text-right" for="ds_username">密码</label>
+        <div class="span4">
+            <input id="ds_username" type="text" placeholder="6-12位的大小写字母及数字" />
+        </div>
+    </div>
+    <div class="controls controls-row">
+        <label class="span4 text-right" for="ds_password">确认密码</label>
+        <div class="span4">
+            <input id="ds_password" type="password" placeholder="确认密码" />
+        </div>
+    </div>
+    <div class="controls controls-row">
+        <label for="email" class="span4 text-right">电子邮箱</label>
+        <div class="span4">
+            <input id="email" type="text" placeholder="电子邮箱" />
+        </div>
+    </div>
+    <div class="controls controls-row">
+        <label for="sex" class="span4 text-right">性别</label>
+        <div class="span4">
+            <label class="radio-inline">
+                <input type="radio" name="sex" id="sex1" value="1" checked> 男
+            </label>
+            <label class="radio-inline">
+                <input type="radio" name="sex" id="sex0" value="0"> 女
+            </label>
+        </div>
+    </div>
+    <hr style="width:100%" />
+    <p class="text-center">
+        <button class="btn btn-primary" type="button" ng-click="$register.regiserFunc();">注册</button>
+    </p>
+</form>
